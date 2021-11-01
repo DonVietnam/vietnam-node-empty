@@ -1,0 +1,37 @@
+{
+  "name": "vietnam-node-empty",
+  "author": "DonVietnam",
+  "version": "1.0.0",
+  "description": "Empty template for Node.Js projects.",
+  "license": "MIT",
+  "keywords": [
+    "vietnam",
+    "nodejs"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DonVietnam/vietnam-node-empty"
+  },
+  "bugs": {
+    "url": "https://github.com/DonVietnam/vietnam-node-empty/issues"
+  },
+  "homepage": "https://github.com/DonVietnam/vietnam-node-empty",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "dev": "nodemon --signal SIGTERM --exec \"node src/app.js\"",
+    "dev-fix": "nodemon --exec \"npm run fix && node src/app.js\"",
+    "lint": "eslint --ignore-path .gitignore .",
+    "fix": "eslint --fix --ignore-path .gitignore ."
+  },
+  "engines": {
+    "node": "^12.9 || 14 || 16"
+  },
+  "dependencies": {
+
+  },
+  "devDependencies": {
+    "eslint": "^7.8.1",
+    "nodemon": "^2.0.4"
+  }
+}
