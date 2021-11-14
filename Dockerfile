@@ -9,7 +9,6 @@ COPY package*.json ./
 #Выполнение команды в shell форме, установка зависиммостей npm
 RUN npm install
 COPY . .
-EXPOSE 4005
-EXPOSE 443
+EXPOSE 3000
 #Команда выполняемая при запуске образа.
 CMD [ "npm", "start" ]

@@ -1,23 +1,21 @@
 # vietnam-node-empty
 
-Empty template for Node.Js projects.
+Шаблон пустого проекта на Node.js.
 
-[Russion](/lang/README-RU.md)
-
-## File structure
+## Структура файлов
 
 ```
 📦project
  ┣ 📂.github 
  ┃ ┗ 📂workflows - GitHub workflows.
- ┃ ┃ ┗ 📜deploy.yml - Deploy project to dockerhub.
- ┣ 📂docs - Documentation for project
+ ┃ ┃ ┗ 📜deploy.yml - Выложить проект на dockerhub.
+ ┣ 📂docs - Документация к проекту.
  ┃ ┗ 📜.gitkeep
- ┣ 📂lang - Documentation in different languages.
+ ┣ 📂lang - Документация на разных языках.
  ┃ ┗ 📜.gitkeep
- ┣ 📂lib - System code for libraries.
+ ┣ 📂lib - Системный код.
  ┃ ┗ 📜.gitkeep
- ┣ 📂src - Application source code.
+ ┣ 📂src - Прикладной код.
  ┃ ┗ 📜.gitkeep
  ┣ 📜.dockerignore
  ┣ 📜.editorconfig

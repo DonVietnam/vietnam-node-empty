@@ -16,7 +16,8 @@
     "url": "https://github.com/DonVietnam/vietnam-node-empty/issues"
   },
   "homepage": "https://github.com/DonVietnam/vietnam-node-empty",
-  "main": "src/app.js",
+  "main": "index.js",
+  "types": "index.d.ts",
   "scripts": {
     "start": "node src/app.js",
     "dev": "nodemon --signal SIGTERM --exec \"node src/app.js\"",
@@ -32,6 +33,8 @@
   },
   "devDependencies": {
     "eslint": "^7.8.1",
-    "nodemon": "^2.0.4"
+    "nodemon": "^2.0.4",
+    "@types/node": "^16.11.7",
+    "typescript": "^4.4.4"
   }
 }
