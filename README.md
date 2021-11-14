@@ -2,7 +2,7 @@
 
 Empty template for Node.Js projects.
 
-[Russion](/lang/README-RU.md)
+[Russian](/lang/README-RU.md)
 
 ## File structure
 
