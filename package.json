@@ -28,9 +28,9 @@
     "index.d.ts"
   ],
   "scripts": {
-    "start": "node src/app.js",
-    "dev": "nodemon --signal SIGTERM --exec \"node src/app.js\"",
-    "dev-fix": "nodemon --exec \"npm run fix && node src/app.js\"",
+    "start": "node index.js",
+    "dev": "nodemon --signal SIGTERM --exec \"node index.js\"",
+    "dev-fix": "nodemon --exec \"npm run fix && node index.js\"",
     "lint": "eslint --ignore-path .gitignore .",
     "fix": "eslint --fix --ignore-path .gitignore .",
     "test": "npm run lint && jest test",

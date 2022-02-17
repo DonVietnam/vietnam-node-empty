@@ -1,14 +1,16 @@
-#Базовый образ
-FROM node:lts
-#Мета-данные
+FROM node:16.14@sha256:426e7b46d7f3a8ef2016fb2d4a3100be5f0829244ca2597bbb1cd106b8eb6cd8
+
 LABEL author="DonVietnam" \
       version="1"
-#Устанавливает рабочий каталог для последующих инструкций
+
 WORKDIR /app
+
 COPY package*.json ./
-#Выполнение команды в shell форме, установка зависиммостей npm
-RUN npm install
-COPY . .
+
+RUN npm install --only=production
+
+COPY src /app
+
 EXPOSE 3000
-#Команда выполняемая при запуске образа.
-CMD [ "npm", "start" ]
+
+CMD [ "node", "app.js" ]
